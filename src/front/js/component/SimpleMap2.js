@@ -58,7 +58,7 @@ export const SimpleMap2 = (props) => {
     return (
 
         <div>
-            <div className="map-container" style={{ height: "36vh", width: "100%" }}>
+            <div className="map-container" style={{ height: "40vh", width: "100%" }}>
                 <GoogleMapReact
                     // Put the google API key here!!
                     bootstrapURLKeys={{ key: "AIzaSyDOhqYOYIXvrk8lt2HQQLI8cS1O8FnZt9I" }}

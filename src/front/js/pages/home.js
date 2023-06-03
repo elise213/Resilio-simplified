@@ -86,8 +86,6 @@ const Home = () => {
     // searchParams,
   ]);
 
-  console.log("PLACE", place)
-
   function handleFood(event) {
     const element = event.target;
     if (element.checked) {
@@ -191,15 +189,15 @@ const Home = () => {
   return (
     <div>
       <div className="grand-container">
-        <div className="alert alert-danger ps-5 w-100" role="alert">
+        {/* <div className="alert alert-danger ps-5 w-100" role="alert">
           The information in our current database is only in Los Angeles, and is only for testing purposes.
-        </div>
+        </div> */}
 
         <div className="search-container">
           {/* <!-- What type of resource--> */}
           <div className="what-type">
             <div className="question">
-              <p className="tell-us">-Please tell us what you need-</p>
+              <p className="tell-us"> What do you need? </p>
             </div>
             <div className="selection">
               <div className="form-check">
@@ -260,8 +258,8 @@ const Home = () => {
 
           {/* Filter by day */}
           <div className="dropdown">
-            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Filter By Day
+            <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Filter By Schedule
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>

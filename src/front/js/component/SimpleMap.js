@@ -114,13 +114,10 @@ export const SimpleMap = ({ zipCode, setPlace, place }) => {
     actions.setSearchResults();
   }
 
-
-  console.log("CITY BOUNDS", city.bounds)
-
   return (
     <div className="map-info">
       {/* <!-- Which City? --> */}
-      <div className="map-city-buttons">
+      {/* <div className="map-city-buttons">
         <button
           className="map-button" style={{ "borderColor": "red" }}
           onClick={() => {
@@ -230,9 +227,9 @@ export const SimpleMap = ({ zipCode, setPlace, place }) => {
         >
           Seattle
         </button>
-      </div>
+      </div> */}
 
-      <div className="map-container" style={{ height: "55vh", width: "100%" }}>
+      <div className="map-container" style={{ height: "68vh", width: "100%" }}>
         <GoogleMapReact
           // Put the google API key here
           bootstrapURLKeys={{ key: "AIzaSyDOhqYOYIXvrk8lt2HQQLI8cS1O8FnZt9I" }}

@@ -80,17 +80,17 @@ export const Navbar = () => {
 
           {/* Link to general resource search - Always visible */}
           <div className="my-navbar-items">
-            <Link to="/">
+            {/* <Link to="/">
               <span className="btn nav-btn">
                 RESOURCE MAP
               </span>
-            </Link>
+            </Link> */}
             {/* FREE STUFF - Always visible */}
-            <Link to="/offerings" >
+            {/* <Link to="/offerings" >
               <span className="btn nav-btn">
                 FREE STUFF
               </span>
-            </Link>
+            </Link> */}
             <Link to="/contact">
               <span className="btn nav-btn">
                 CONTACT
@@ -98,13 +98,13 @@ export const Navbar = () => {
             </Link>
 
             {/* DONATE - Always visible */}
-            <Link to="/donate">
+            {/* <Link to="/donate">
               <span className="btn nav-btn">
                 DONATE
               </span>
-            </Link>
+            </Link> */}
             {/* Link to Create Resource - Only visible when logged in as an Organization */}
-            {token && is_org == "true" ? (
+            {/* {token && is_org == "true" ? (
               <Link to="/createResource">
                 <span className="btn nav-btn">
                   CREATE NEW LISTING
@@ -112,9 +112,9 @@ export const Navbar = () => {
               </Link>
             ) : (
               ""
-            )}
+            )} */}
             {/* Logout- Only visible when logged in, Login/ Register- Only visible when NOT logged in */}
-            {token ? (
+            {/* {token ? (
               <span className="btn nav-btn" onClick={() => actions.logout()}>
                 LOGOUT
               </span>
@@ -122,9 +122,9 @@ export const Navbar = () => {
               <span className="btn nav-btn">
                 <LogRegBtn />
               </span>
-            )}
+            )} */}
             {/* Link to profile page - Only visible when logged in r*/}
-            {/* {console.log("AVATAR", avatar)} */}
+
             {token ? (
               <Link to="/userProfile">
                 <i
