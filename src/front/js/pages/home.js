@@ -197,7 +197,7 @@ const Home = () => {
           {/* <!-- What type of resource--> */}
           <div className="what-type">
             <div className="question">
-              <p className="tell-us"> What do you need? </p>
+              {/* <p className="tell-us"> What do you need? </p> */}
             </div>
             <div className="selection">
               <div className="form-check">

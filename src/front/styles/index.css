@@ -67,14 +67,22 @@
   /* padding-left: 30px; */
   justify-content: space-evenly;
   margin-bottom: 30px;
+  padding-left: 30px;
 }
 
 .description {
-  font-size: large;
+  font-size: 23px;
   font-family: "Urbanist", sans-serif;
-
+  line-height: 1.5;
 }
 
+.description-heading {
+  font-weight: bolder;
+  font-size: 23px;
+  /* font-family: "Urbanist", sans-serif; */
+}
+
+s
 /* _____________________________________________________________CARD */
 
 .card-body {
@@ -95,12 +103,13 @@
   display: flex;
   font-family: "Urbanist", sans-serif;
   background-color: #eeeeee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.29), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   margin-bottom: 10px;
   width: 95%;
   align-items: end;
   padding: 4px;
   max-width: 250px;
+  border-radius: 2%;
 }
 
 .card-header {
@@ -177,7 +186,7 @@
 }
 
 .navbar-logo {
-  width: 140px;
+  width: 200px;
 }
 
 .nav-profile-icon {
@@ -250,7 +259,7 @@
   margin-left: 20px;
   margin-right: 20px;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .user-profile-pic {
@@ -330,7 +339,7 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-right: 50px;
 }
 
 .map-and-cities {
@@ -339,15 +348,12 @@
 }
 
 .scroll-search-results {
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
   height: 69.5vh;
   width: 18vw;
   direction: rtl;
-  /* padding: 3px; */
   display: flex;
   justify-content: left;
-  margin-left: 2%;
+  margin-left: 2px;
 }
 
 .scroll-search-results ul {
@@ -410,14 +416,16 @@
 /* _____________________________________________________________Selection-*/
 .search-container {
   word-wrap: wrap;
-  margin: 10px;
+  /* margin: 10px; */
   width: 86.5%;
   padding: 15px;
   border-width: 10px;
-  border-color: lime;
+  border-color: palegreen;
   border-style: double;
   background-color: rgb(199, 255, 200);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0 4px 8px 0 rgba(100, 136, 109, 0.5), 0 6px 20px 0 rgba(100, 136, 109, 0.5);
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -441,7 +449,7 @@
   box-shadow: none !important;
   /* border: solid 3px lime !important; */
   font-family: "Urbanist", sans-serif !important;
-  font-size: large;
+  font-size: 20px;
   color: black;
   border-radius: 3%;
 
@@ -457,35 +465,27 @@
 .form-check-input {
   background-color: white;
   border: solid black 1px;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
+  box-shadow: none;
+  cursor: pointer;
+  color: black !important;
 }
 
 .form-check-label {
   font-family: "Urbanist", sans-serif;
-  font-size: large;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 input[type=checkbox]:checked {
-  background-color: lightgreen !important;
-  color: #ffffff !important;
+  background-color: green;
+  color: black !important;
 }
 
 input[type='checkbox']:after {
   box-shadow: none !important;
-}
-
-.form-check-input {
-  cursor: pointer;
-}
-
-.question {
-  display: flex;
-  justify-content: center;
-  font-size: large;
-  font-weight: bold;
-  font-family: "Urbanist", sans-serif;
 }
 
 /* _____________________________________________________________Simple-Map Component */
@@ -572,10 +572,11 @@ input[type='checkbox']:after {
     overflow-y: hidden; */
     display: flex;
     flex-direction: row;
-    height: 30vh;
+    height: 26vh;
     width: 100%;
     justify-content: center;
     direction: unset;
+    margin-bottom: 10px;
   }
 
   .scroll-search-results ul {
@@ -782,12 +783,15 @@ label {
   cursor: pointer;
 }
 
+
+
 .back-to-search {
-  padding-top: 15px;
   text-decoration: none !important;
   color: black;
   font-size: large;
   font-family: "Urbanist", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .back-to-search:hover {

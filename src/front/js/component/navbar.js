@@ -54,7 +54,7 @@ export const Navbar = () => {
       {/* Navbar Brand Logo - Link to Home - Always Visible*/}
       <div className="container-fluid">
         <Link to="/">
-          <span className="navbar-brand ms-4">
+          <span className="navbar-brand ms-5">
             <img className="navbar-logo" src={AliveLogo}></img>
           </span>
         </Link>
@@ -91,11 +91,11 @@ export const Navbar = () => {
                 FREE STUFF
               </span>
             </Link> */}
-            <Link to="/contact">
+            {/* <Link to="/contact">
               <span className="btn nav-btn">
                 CONTACT
               </span>
-            </Link>
+            </Link> */}
 
             {/* DONATE - Always visible */}
             {/* <Link to="/donate">
@@ -125,15 +125,13 @@ export const Navbar = () => {
             )} */}
             {/* Link to profile page - Only visible when logged in r*/}
 
-            {token ? (
+            {/* {token ? (
               <Link to="/userProfile">
                 <i
-                  // src=""
                   className={`${avatar} nav-profile-icon`}
-                // onError={handleImageError}
                 />
               </Link>
-            ) : null}
+            ) : null} */}
           </div>
         </div>
       </div>
