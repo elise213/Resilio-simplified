@@ -22,12 +22,14 @@ services:
           - key: PYTHON_VERSION
             value: 3.10.6
           - key: DATABASE_URL # Render PostgreSQL database
-            fromDatabase:
-                name: postgresql-trapezoidal-42170
-                property: connectionString
+            value: postgresql://postgres:resiliore@resilio.crmimrntnvqm.us-east-2.rds.amazonaws.com:5432/resilio
+            # fromDatabase:
+            #     name: postgresql-trapezoidal-42170
+            #     property: connectionString
 
-databases: # Render PostgreSQL database
-    - name: postgresql-trapezoidal-42170
-      region: ohio
-      ipAllowList: [] # only allow internal connections
-      plan: free # optional; defaults to starter
+
+# databases: # Render PostgreSQL database
+#     - name: postgresql-trapezoidal-42170
+#       region: ohio
+#       ipAllowList: [] # only allow internal connections
+#       plan: free # optional; defaults to starter
