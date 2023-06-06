@@ -26,14 +26,14 @@ export const ResourceCard = (props) => {
 
   return (
     <div className="resource-card row">
-      <div>
+      <div className="">
         <Link to={props.link} className="text-decoration-none">
           <div className="card-header">
             <div className="card-title-div">
               <p className="resource-card-title-name">{props.name}</p>
             </div>
           </div>
-          <div className="card-body">
+          <div className="d-flex justify-content-center">
             <img className="card-img" src={props.image} alt="profile picture" />
           </div>
         </Link>
