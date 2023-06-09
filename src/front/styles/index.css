@@ -3,7 +3,7 @@
 .resource-title {
   /* text-decoration: underline wavy lime; */
   font-family: "Urbanist", sans-serif;
-  font-size: xx-large;
+  font-size: 50px;
 }
 
 .resource-name {
@@ -339,10 +339,12 @@ s
   border: 2px solid lime;
 }
 
-.empty-50 {
+.description-buttons {
   width: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
   padding-right: 50px;
 }
 
@@ -380,7 +382,7 @@ s
   justify-content: center;
 }
 
-.scroll-search-results::-webkit-scrollbar-track {
+.scroll-search-results ul::-webkit-scrollbar-track {
   background-color: transparent;
 }
 

@@ -62,7 +62,15 @@ export const ResourceInfo = (props) => {
 
   return (
     <div className="offering-card ">
-
+      {/* <Link to={"/"}>
+        <div className="back-to-search">
+          <i className="fa-solid fa-arrow-left-long me-3"></i>
+          Back to Search Results
+        </div>
+      </Link> */}
+      <div className="resource-name">
+        <h1 className="resource-title">{props.name}</h1>
+      </div>
       <div className="map-carousel-column">
         <div className="res-map-container">
           <SimpleMap2 latitude={props.latitude} longitude={props.longitude} />
@@ -139,19 +147,16 @@ export const ResourceInfo = (props) => {
         </div>
       </div>
 
-      <div className="resource-name">
-        <h1 className="resource-title">{props.name}</h1>
-      </div>
-
       <div className="pic-and-info">
-        <div className="empty-50">
+        <div className="description-buttons">
           {/* DESCRIPTION */}
           <div className="">
             {/* <span className="description-heading"> About {props.name} : </span> */}
             <p className="description mt-3">{props.description}</p>
           </div>
+          <div>
 
-
+          </div>
         </div>
 
         <div className="details-column">
@@ -190,18 +195,20 @@ export const ResourceInfo = (props) => {
                 <p className="resource-card-text mt-2">{day.charAt(0).toUpperCase() + day.slice(1)}: {schedule}</p>
               ))}
             </div>
+
           </div>
+          <Link to={"/contact"}>
+            <div className="back-to-search">
+              <i class="fa-solid fa-triangle-exclamation me-3"></i>
+              Report this information as incorrect.
+            </div>
+          </Link>
 
         </div>
 
       </div >
 
-      <Link to={"/"}>
-        <div className="back-to-search">
-          <i className="fa-solid fa-arrow-left-long me-3"></i>
-          Back to Search Results
-        </div>
-      </Link>
+
     </div >
   );
 }
