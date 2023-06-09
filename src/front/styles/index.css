@@ -1,31 +1,30 @@
 /* _____________________________________________________________RESOURCE / OFFERING INFO */
 
 .resource-title {
-  text-decoration: underline wavy lime;
+  /* text-decoration: underline wavy lime; */
   font-family: "Urbanist", sans-serif;
   font-size: xx-large;
 }
 
 .resource-name {
-  margin-bottom: 40px;
+  margin: 20px 0 20px 0;
   display: flex;
   justify-content: center;
 }
 
 .res-map-container {
-  width: 50%;
+  width: 48%;
   height: 100%;
 }
 
 .map-carousel-column {
   display: flex;
-
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .carousel {
   /* width: 400px; */
-  width: 50%;
+  width: 48%;
   height: 100%;
 
 }
@@ -237,6 +236,12 @@ s
 
 .modal-content {
   border: solid 2px lightgreen;
+}
+
+.marker-text {
+  z-index: 2;
+  font-size: 20px;
+  background-color: purple;
 }
 
 /* _____________________________________________________________USER PROFILE PAGE */

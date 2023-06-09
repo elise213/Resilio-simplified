@@ -18,19 +18,6 @@ export const SimpleMap = ({ zipCode, setPlace, place }) => {
     setPlace(city);
   }, [city])
 
-  // function zipcode(zip) {
-  //   fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDOhqYOYIXvrk8lt2HQQLI8cS1O8FnZt9I&components=postal_code:${zip}`)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       if (data.results.length > 0) {
-  //         const result = data.results[0];
-  //         const lat = result.geometry.location.lat;
-  //         const lng = result.geometry.location.lng;
-  //         setCity({ center: { lat, lng }, bounds: null });
-  //       }
-  //     });
-  // }
-
   function geoFindMe() {
     function success(position) {
       let latitude = position.coords.latitude;
@@ -74,7 +61,8 @@ export const SimpleMap = ({ zipCode, setPlace, place }) => {
         <div className="marker-icon">
           <i className="fa-solid fa-map-pin"></i>
 
-          {isHovered && text && <span>{text}</span>}
+          {isHovered && text && <span className="marker-text">{text}</span>}
+
         </div>
       </div>
     );

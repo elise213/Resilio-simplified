@@ -63,62 +63,6 @@ export const ResourceInfo = (props) => {
   return (
     <div className="offering-card ">
 
-      <div className="resource-name">
-        <h1 className="resource-title">{props.name}</h1>
-      </div>
-
-      <div className="pic-and-info">
-        <div className="empty-50">
-          {/* DESCRIPTION */}
-          <div className="mt-4">
-            <span className="description-heading"> About {props.name} : </span>
-            <p className="description mt-3">{props.description}</p>
-          </div>
-
-
-        </div>
-
-        <div className="details-column">
-
-          {/* ADDRESS */}
-          <div>
-            <i className="fa-solid fa-map-location-dot me-4 mt-4"></i>
-            <a
-              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(props.address)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resource-card-text"
-            >
-              {props.address}
-            </a>
-          </div>
-
-          {/* WEBSITE */}
-          <div>
-            <i className="fa-solid fa-wifi me-4 mt-4"></i>
-            <a href={"https://www." + props.website} className="resource-card-text">{props.website}</a>
-          </div>
-
-          {/* PHONE */}
-          <div>
-            <i className="fa-solid fa-phone me-4 mt-4"></i>
-            <span className="resource-card-text">{props.phone}</span>
-          </div>
-
-          {/* SCHEDULE */}
-          <div className="d-flex">
-            <i className="fa-solid fa-calendar-days me-4 mt-4"></i>
-            {/* <span className="resource-card-text">Schedule:</span> */}
-            <div>
-              {Object.entries(formattedSchedule).map(([day, schedule], index) => (
-                <p className="resource-card-text mt-4">{day.charAt(0).toUpperCase() + day.slice(1)}: {schedule}</p>
-              ))}
-            </div>
-          </div>
-
-        </div>
-
-      </div >
       <div className="map-carousel-column">
         <div className="res-map-container">
           <SimpleMap2 latitude={props.latitude} longitude={props.longitude} />
@@ -194,6 +138,64 @@ export const ResourceInfo = (props) => {
           </button>
         </div>
       </div>
+
+      <div className="resource-name">
+        <h1 className="resource-title">{props.name}</h1>
+      </div>
+
+      <div className="pic-and-info">
+        <div className="empty-50">
+          {/* DESCRIPTION */}
+          <div className="">
+            {/* <span className="description-heading"> About {props.name} : </span> */}
+            <p className="description mt-3">{props.description}</p>
+          </div>
+
+
+        </div>
+
+        <div className="details-column">
+
+          {/* ADDRESS */}
+          <div>
+            <i className="fa-solid fa-map-location-dot me-4 mt-4"></i>
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(props.address)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resource-card-text"
+            >
+              {props.address}
+            </a>
+          </div>
+
+          {/* WEBSITE */}
+          <div>
+            <i className="fa-solid fa-wifi me-4 mt-4"></i>
+            <a href={"https://www." + props.website} className="resource-card-text">{props.website}</a>
+          </div>
+
+          {/* PHONE */}
+          {/* <div>
+            <i className="fa-solid fa-phone me-4 mt-4"></i>
+            <span className="resource-card-text">{props.phone}</span>
+          </div> */}
+
+          {/* SCHEDULE */}
+          <div className="d-flex">
+            <i className="fa-solid fa-calendar-days me-4 mt-4"></i>
+            {/* <span className="resource-card-text">Schedule:</span> */}
+            <div className="mt-3">
+              {Object.entries(formattedSchedule).map(([day, schedule], index) => (
+                <p className="resource-card-text mt-2">{day.charAt(0).toUpperCase() + day.slice(1)}: {schedule}</p>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+      </div >
+
       <Link to={"/"}>
         <div className="back-to-search">
           <i className="fa-solid fa-arrow-left-long me-3"></i>
