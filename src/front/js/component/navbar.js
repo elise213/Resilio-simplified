@@ -31,7 +31,6 @@ export const Navbar = () => {
     e.target.className = "nav-profile-icon fa-regular fa-user";
   };
 
-
   function setActiveBtn() {
     const navBtns = document.querySelectorAll(".nav-btn");
     const currentUrl = location.pathname;
@@ -47,7 +46,6 @@ export const Navbar = () => {
       }
     });
   }
-
 
   return (
     <nav className="navbar navbar-expand-lg mb-3" id="navbar">
