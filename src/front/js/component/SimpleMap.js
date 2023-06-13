@@ -119,109 +119,10 @@ export const SimpleMap = ({ zipCode, setPlace, place }) => {
           Use my Location
         </button>
 
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(61.2176, -149.8997);
-          }}
-        >
-          Anchorage
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(44.0521, -123.0868);
-          }}
-        >
-          Eugene
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(36.1716, -115.1391);
-          }}
-        >
-          Las Vegas
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(34.0522, -118.2437);
-          }}
-        >
-          Los Angeles
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(25.7617, -80.1918);
-          }}
-        >
-          Miami
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(40.7128, -74.006);
-          }}
-        >
-          New York
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(32.7157, -117.1611);
-          }}
-        >
-          San Diego
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(37.7749, -122.4194);
-          }}
-        >
-          San Francisco
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(37.3387, -121.8853);
-          }}
-        >
-          San Jose
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(32.0809, -81.0912);
-          }}
-        >
-          Savannah
-        </button>
-
-        <button
-          className="map-button"
-          onClick={() => {
-            setBounds(47.6062, -122.3321);
-          }}
-        >
-          Seattle
-        </button>
       </div> */}
 
       <div className="map-container" style={{ height: "68vh", width: "100%" }}>
         <GoogleMapReact
-          // Put the google API key here
           bootstrapURLKeys={{ key: "AIzaSyDOhqYOYIXvrk8lt2HQQLI8cS1O8FnZt9I" }}
           center={city.center}
           defaultZoom={11}

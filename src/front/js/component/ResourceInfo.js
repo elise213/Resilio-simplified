@@ -154,7 +154,7 @@ export const ResourceInfo = (props) => {
           {/* ADDRESS */}
           <div className="fifty">
             <div>
-              <i className="fa-solid fa-map-location-dot me-4 mt-5"></i>
+              <i className="fa-solid fa-map-location-dot me-4 mb-5"></i>
               <a
                 href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(props.address)}`}
                 target="_blank"
@@ -166,12 +166,12 @@ export const ResourceInfo = (props) => {
             </div>
             {/* WEBSITE */}
             <div>
-              <i className="fa-solid fa-wifi me-4 mt-5"></i>
+              <i className="fa-solid fa-wifi me-4 mb-5"></i>
               <a href={"https://www." + props.website} className="resource-card-text">{props.website}</a>
             </div>
 
             {/* SCHEDULE */}
-            <div className="d-flex mt-5">
+            <div className="d-flex mb-5">
               <i className="fa-solid fa-calendar-days me-4"></i>
               {/* <span className="resource-card-text">Schedule:</span> */}
               <div className="">

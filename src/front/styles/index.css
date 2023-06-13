@@ -4,6 +4,7 @@
   font-family: "Carme", sans-serif;
   font-size: xx-large;
   font-weight: bold;
+  text-align: center;
 }
 
 .resource-name {
@@ -75,7 +76,7 @@
   /* padding-left: 30px; */
   justify-content: space-evenly;
   /* margin-bottom: 30px; */
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .description {
@@ -163,7 +164,8 @@
 .fifty {
   height: 50%;
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
 }
 
 /* _____________________________________________________________NAVBAR / FOOTER*/
@@ -407,7 +409,7 @@
   flex-grow: 1;
   width: 98%;
   margin-bottom: 20px;
-
+  margin-top: 10px;
 }
 
 .search-results-full {
@@ -522,7 +524,7 @@ input[type='checkbox']:after {
 
 /* _____________________________________________________________Simple-Map Component */
 .map-container {
-  box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 }
 
