@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.info {
+  margin-bottom: 20px;
+}
+
 .resource-name {
   /* margin: 20px 0 20px 0; */
   display: flex;
