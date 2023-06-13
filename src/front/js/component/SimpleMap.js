@@ -7,12 +7,17 @@ import { Link, withRouter, useNavigate } from "react-router-dom";
 export const SimpleMap = ({ zipCode, setPlace, place }) => {
   const { store, actions } = useContext(Context);
   const [city, setCity] = useState({
+    // AUSTIN
+    center: { lat: 30.266666, lng: -97.733330 },
+    // LOS ANGELES
     center: { lat: 34.0522, lng: -118.2437 },
     bounds: {
       ne: { lat: (34.0522 + 0.18866583325124964), lng: (-118.2437 + 0.44322967529295454) },
       sw: { lat: (34.0522 - 0.18908662930897435), lng: (-118.2437 - 0.44322967529298296) }
     }
   });
+
+
 
   useEffect(() => {
     setPlace(city);
@@ -60,13 +65,10 @@ export const SimpleMap = ({ zipCode, setPlace, place }) => {
       >
         <div className="marker-icon">
           <i className="fa-solid fa-map-pin"></i>
-
           {isHovered && text && <span className="marker-text">{text}</span>}
-
         </div>
       </div>
     );
-
   };
 
   const handleBoundsChange = (data) => {

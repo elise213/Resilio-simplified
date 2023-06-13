@@ -44,8 +44,8 @@ export const ResourceCard = (props) => {
           name={props.name}
           type={props.type}
         />
-        <div className="card-icon">
-          <i className={icon} />
+        <div className="">
+          <i className={`${icon} card-icon`} />
         </div>
       </div>
     </div>

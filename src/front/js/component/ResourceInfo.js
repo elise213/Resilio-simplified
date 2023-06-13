@@ -61,20 +61,15 @@ export const ResourceInfo = (props) => {
   { console.log("formatted sched", formattedSchedule); }
 
   return (
-    <div className="offering-card ">
+    <div className="offering-card m-4">
       {/* <Link to={"/"}>
         <div className="back-to-search">
           <i className="fa-solid fa-arrow-left-long me-3"></i>
           Back to Search Results
         </div>
       </Link> */}
-      <div className="resource-name">
-        <h1 className="resource-title">{props.name}</h1>
-      </div>
+
       <div className="map-carousel-column">
-        <div className="res-map-container">
-          <SimpleMap2 latitude={props.latitude} longitude={props.longitude} />
-        </div>
 
         {/* _______CAROUSEL_______ */}
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-interval="false">
@@ -144,71 +139,57 @@ export const ResourceInfo = (props) => {
             ></span>
             <span className="visually-hidden">Next</span>
           </button>
+          <SimpleMap2 latitude={props.latitude} longitude={props.longitude} />
         </div>
-      </div>
 
-      <div className="pic-and-info">
-        <div className="description-buttons">
-          {/* DESCRIPTION */}
-          <div className="">
-            {/* <span className="description-heading"> About {props.name} : </span> */}
-            <p className="description mt-3">{props.description}</p>
-          </div>
-          <div>
-
-          </div>
-        </div>
 
         <div className="details-column">
-
+          {/* DESCRIPTION */}
+          <div className="description-div fifty">
+            <div className="resource-name">
+              <h1 className="resource-title">{props.name}</h1>
+            </div>
+            <p className="resource-card-text description mt-3">{props.description}</p>
+          </div>
           {/* ADDRESS */}
-          <div>
-            <i className="fa-solid fa-map-location-dot me-4 mt-4"></i>
-            <a
-              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(props.address)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resource-card-text"
-            >
-              {props.address}
-            </a>
-          </div>
+          <div className="fifty">
+            <div>
+              <i className="fa-solid fa-map-location-dot me-4 mt-5"></i>
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(props.address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resource-card-text"
+              >
+                {props.address}
+              </a>
+            </div>
+            {/* WEBSITE */}
+            <div>
+              <i className="fa-solid fa-wifi me-4 mt-5"></i>
+              <a href={"https://www." + props.website} className="resource-card-text">{props.website}</a>
+            </div>
 
-          {/* WEBSITE */}
-          <div>
-            <i className="fa-solid fa-wifi me-4 mt-4"></i>
-            <a href={"https://www." + props.website} className="resource-card-text">{props.website}</a>
-          </div>
-
-          {/* PHONE */}
-          {/* <div>
-            <i className="fa-solid fa-phone me-4 mt-4"></i>
-            <span className="resource-card-text">{props.phone}</span>
-          </div> */}
-
-          {/* SCHEDULE */}
-          <div className="d-flex">
-            <i className="fa-solid fa-calendar-days me-4 mt-4"></i>
-            {/* <span className="resource-card-text">Schedule:</span> */}
-            <div className="mt-3">
-              {Object.entries(formattedSchedule).map(([day, schedule], index) => (
-                <p className="resource-card-text mt-2">{day.charAt(0).toUpperCase() + day.slice(1)}: {schedule}</p>
-              ))}
+            {/* SCHEDULE */}
+            <div className="d-flex mt-5">
+              <i className="fa-solid fa-calendar-days me-4"></i>
+              {/* <span className="resource-card-text">Schedule:</span> */}
+              <div className="">
+                {Object.entries(formattedSchedule).map(([day, schedule], index) => (
+                  <p className="resource-card-text">{day.charAt(0).toUpperCase() + day.slice(1)}: {schedule}</p>
+                ))}
+              </div>
             </div>
 
           </div>
-          <Link to={"/contact"}>
-            <div className="back-to-search">
+          {/* <Link to={"/contact"}>
+            <div className="back-to-search resource-card-text">
               <i class="fa-solid fa-triangle-exclamation me-3"></i>
-              Report this information as incorrect.
+              Report incorrect information
             </div>
-          </Link>
-
+          </Link> */}
         </div>
-
-      </div >
-
-
+      </div>
     </div >
   );
 }

@@ -507,7 +507,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 export default getState;
 
 
-// // // // // ______________________________LOCAL
+// // // // // // ______________________________LOCAL
 
 // const getState = ({ getStore, getActions, setStore }) => {
 //   return {

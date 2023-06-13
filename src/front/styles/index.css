@@ -1,25 +1,32 @@
 /* _____________________________________________________________RESOURCE / OFFERING INFO */
 
 .resource-title {
-  /* text-decoration: underline wavy lime; */
-  font-family: "Urbanist", sans-serif;
-  font-size: 50px;
+  font-family: "Carme", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 .resource-name {
-  margin: 20px 0 20px 0;
+  /* margin: 20px 0 20px 0; */
   display: flex;
   justify-content: center;
 }
 
 .res-map-container {
-  width: 48%;
+  width: 33%;
   height: 100%;
 }
+
+.res-map-container-2 {
+  width: 33%;
+  height: 100%;
+}
+
 
 .map-carousel-column {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .carousel {
@@ -33,7 +40,7 @@
   width: 35vw;
   object-fit: cover;
   height: 40vh;
-  border: 4px solid lightgreen;
+  /* border: 4px solid lightgreen; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -42,9 +49,11 @@
 }
 
 .resource-card-text {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Carme", sans-serif;
   font-size: large;
   color: black;
+  width: 100%;
+  line-height: 1;
 }
 
 .favorite-button-container {
@@ -65,14 +74,16 @@
   flex-direction: column;
   /* padding-left: 30px; */
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   padding-left: 30px;
 }
 
 .description {
-  font-size: 23px;
-  font-family: "Urbanist", sans-serif;
-  line-height: 1.5;
+  /* font-size: 23px; */
+  font-family: "Carme", sans-serif;
+  line-height: 2;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
 }
 
 .description-heading {
@@ -80,7 +91,6 @@
   font-size: 23px;
 }
 
-s
 /* _____________________________________________________________CARD */
 
 .card-body {
@@ -98,18 +108,19 @@ s
 
 .resource-card {
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   justify-content: center;
   display: flex;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Carme", sans-serif;
+  font-family: sans-serif;
   background-color: #eeeeee;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.29), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   margin-bottom: 10px;
-  width: 95%;
+  width: 98%;
   align-items: end;
   padding: 4px;
   max-width: 250px;
-  border-radius: 2%;
+  border-radius: 1.5%;
   min-height: 150px;
 }
 
@@ -133,14 +144,26 @@ s
   color: black;
   font-size: medium;
   font-weight: bold !important;
-  font-family: "Urbanist", sans-serif;
+  /* font-family: "Urbanist", sans-serif; */
+  font-family: "Carme", sans-serif;
+}
+
+.description-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card-icon {
   color: darkgreen;
-  font-size: large;
-  /* margin-right: 10px;
-  margin-bottom: 5px; */
+  font-size: x-large;
+}
+
+.fifty {
+  height: 50%;
+  width: 100%;
+
 }
 
 /* _____________________________________________________________NAVBAR / FOOTER*/
@@ -185,6 +208,7 @@ s
 
 .navbar-logo {
   width: 200px;
+  margin-left: 10px;
 }
 
 .nav-profile-icon {
@@ -329,11 +353,6 @@ s
   /* justify-content: center; */
 }
 
-.pic-and-info {
-  display: flex;
-  /* background-color: red; */
-}
-
 .dropdown-menu {
   background-color: white;
   border: 2px solid lime;
@@ -343,15 +362,9 @@ s
   width: 50%;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   padding-right: 50px;
 }
 
-.map-and-cities {
-  width: 0%;
-  flex-grow: 1;
-}
 
 .row {
   --bs-gutter-x: 0;
@@ -359,20 +372,24 @@ s
 }
 
 .scroll-search-results {
-  height: 69.5vh;
+  height: 69vh;
   width: 18vw;
   direction: rtl;
   display: flex;
   justify-content: left;
-  margin-left: 20px;
+  margin-left: 15px;
+  direction: rtl;
 }
+
 
 .scroll-search-results ul {
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0;
   float: left;
-  margin: 0px 10px 0px 0px;
+  padding: 9px;
+  direction: ltr;
+  margin: 0px 0px 0px 0px;
 }
 
 .scroll-search-results li {
@@ -390,14 +407,13 @@ s
   flex-grow: 1;
   width: 98%;
   margin-bottom: 20px;
+
 }
-
-
 
 .search-results-full {
   display: flex;
   width: 90%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .grand-container {
@@ -407,39 +423,38 @@ s
   padding-bottom: 15px;
 }
 
-/* _____________________________________________________________DONATE */
-
-.donate-page {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.donate-text {
-  width: 70%;
-}
-
-.donate-text p {
-  font-family: "Space Mono", Sans-serif;
-  line-height: 2;
-}
-
 /* _____________________________________________________________Selection-*/
 .search-container {
   word-wrap: wrap;
-  /* margin: 10px; */
   width: 86.5%;
-  padding: 15px;
-  border-width: 10px;
-  border-color: palegreen;
-  border-style: double;
-  background-color: rgb(199, 255, 200);
-  /* box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  box-shadow: 0 4px 8px 0 rgba(100, 136, 109, 0.5), 0 6px 20px 0 rgba(100, 136, 109, 0.5);
-
+  padding: 5px;
+  border-width: 4px;
+  border-color: rgb(108, 195, 108);
+  border-radius: 4px;
+  border-style: solid;
+  background-color: rgb(153, 224, 154);
+  box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(100, 136, 109, 0.5), 0 6px 20px 0 rgba(20, 237, 74, 0.5); */
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
+}
+
+.search-container-2 {
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgb(101, 249, 123);
+  box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(169, 254, 166);
+}
+
+.question {
+  font-size: xx-large;
 }
 
 .selection {
@@ -452,20 +467,23 @@ s
 
 .tell-us {
   font-family: "Urbanist", sans-serif;
-  font-size: 30px;
+  font-size: 35px;
+  letter-spacing: 1.3x;
 }
 
 /* Filter by day */
 .dropdown-toggle {
   box-shadow: none !important;
-  /* border: solid 3px lime !important; */
   font-family: "Urbanist", sans-serif !important;
   font-size: 20px;
   color: black;
   border-radius: 3%;
-
+  direction: rtl;
 }
 
+.dropdown-toggle::after {
+  margin-right: 10px;
+}
 
 .form-check {
   display: flex;
@@ -478,16 +496,19 @@ s
   border: solid black 1px;
   width: 18px;
   height: 18px;
-  margin-right: 5px;
+  margin-right: 10px;
   box-shadow: none;
   cursor: pointer;
   color: black !important;
+  vertical-align: super;
 }
 
 .form-check-label {
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
+  /* font-family: "Urbanist", sans-serif; */
+  font-family: "Carme", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.4x;
+
 }
 
 input[type=checkbox]:checked {
@@ -501,37 +522,15 @@ input[type='checkbox']:after {
 
 /* _____________________________________________________________Simple-Map Component */
 .map-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 3px solid lightgreen;
+  box-shadow: 0 4px 8px 0 rgba(19, 20, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.map-city-buttons {
-  display: flex;
-  overflow-y: auto;
-  overflow-x: scroll;
-  height: 100px;
-  width: 100%;
-  gap: .5rem;
-}
-
-.map-city-buttons::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.map-button {
-  background-color: white;
-  font-family: "Urbanist", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 20vw;
-  height: 85%;
-  font-size: 11px;
-  border: 2px solid lightgreen;
-  font-size: 12px;
-}
-
-.map-button:hover {
-  background-color: lightgreen;
+.map-and-cities {
+  width: 0%;
+  flex-grow: 1;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 /* _____________________________________________________________CONTACT PAGE */
@@ -554,7 +553,7 @@ input[type='checkbox']:after {
 .details {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 
 .offering-details-page {
@@ -754,26 +753,9 @@ label {
   color: black !important;
 }
 
-.maras-button {
-  border: 1px solid black;
-  background-color: white;
-  font-family: "Urbanist", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: black;
-  padding: 3px;
-  font-size: small;
-}
-
-.maras-button:hover {
-  background-color: lightgreen;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: black;
-}
-
 .submit {
   border: 1px solid black;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Carme", sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
   background-color: lightgreen !important;
@@ -782,26 +764,12 @@ label {
   height: 30px;
 }
 
-/* change the name of this one  */
-.forgot-password {
-  padding-top: 15px;
-  text-decoration: none !important;
-  color: black;
-}
-
-.forgot-password:hover {
-  color: lightgreen;
-  cursor: pointer;
-}
-
-
-
 .back-to-search {
   text-decoration: none !important;
   color: black;
   font-size: large;
-  font-family: "Urbanist", sans-serif;
-  margin-top: 50px;
+  font-family: "Carme", sans-serif;
+  margin-top: 15px;
   margin-bottom: 50px;
 }
 
@@ -819,18 +787,7 @@ label {
   color: gray
 }
 
-/* .back-to-results {
-  background-color: white;
-  font-family: "Urbanist", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 30vw;
-  height: 5vh;
-  font-size: 15px;
-  border: 2px solid lightgreen;
-  padding: 5px;
-} */
-
-.fave-button {
+/* .fave-button {
   border: none;
   background-color: transparent;
 }
@@ -841,7 +798,7 @@ label {
 
 .fa-heart {
   font-size: large;
-}
+} */
 
 .alert {
   text-align: center;
@@ -856,7 +813,7 @@ label {
 
 .marker-icon i {
   color: red;
-  font-size: 28px;
+  font-size: 27px;
 }
 
 .marker-icon span {
@@ -869,8 +826,8 @@ label {
   white-space: nowrap;
 }
 
-.favorite-button-container {
+/* .favorite-button-container {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-}
+} */

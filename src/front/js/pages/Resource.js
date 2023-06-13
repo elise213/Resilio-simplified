@@ -1,10 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext.js";
-// import Comments from "../component/comments/Comments";
 import { ResourceInfo } from "../component/ResourceInfo";
-// import SimpleCommentForm from "../component/SimpleCommentForm.js";
-// import SimpleCommentList from "../component/SimpleCommentList.js";
 import { SimpleMap2 } from "../component/SimpleMap2.js";
 
 const resource = () => {
